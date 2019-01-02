@@ -32,8 +32,8 @@ ALLOWED_HOSTS = (
 )
 
 # Application definition
-
-
+SERVER_EMAIL = ''
+MANAGERS = ''
 ROOT_URLCONF = 'mysite.urls'
 
 # Internationalization
@@ -150,7 +150,8 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mysite',
-    'gist.apps.GistConfig'
+    'gist.apps.GistConfig',
+    'contacts.apps.ContactsConfig',
 )
 
 LANGUAGES = (
