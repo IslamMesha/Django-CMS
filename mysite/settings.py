@@ -150,8 +150,8 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mysite',
-    'gist.apps.GistConfig',
-    'contacts.apps.ContactsConfig',
+    'gist',
+    'contacts',
 )
 
 LANGUAGES = (
@@ -227,3 +227,5 @@ STATICFILES_FINDERS = [
 ALDRYN_BOILERPLATE_NAME = 'bootstrap3'
 
 THUMBNAIL_HIGH_RESOLUTION = True
+
+APPEND_SLASH = False
