@@ -1,13 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> {{ instance.gist_user }} </title>
-    <script src="https://gist.github.com/{{ instance.gist_user }}/{{ instance.gist_id }}.js{% if instance.file_name %}
-    
-    {% endif %}"></script>
-</head>
-<body>
-
-</body>
-</html>
+<script src="https://gist.github.com/{{ instance.gist_user }}/{{ instance.gist_id }}.js
+        {% if instance.file_name %}{% endif %}"></script>

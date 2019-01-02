@@ -10,7 +10,7 @@ class GistPluginModel(CMSPlugin):
     gist_user = models.CharField('GitHub User', blank=False, default='', help_text='Please supply the GitHub username',
                                  max_length=32)
 
-    file_name = models.CharField('File Name', blank=False, default='', help_text='Optional supply a filename',
+    file_name = models.CharField('File Name', blank=True, default='', help_text='Optional supply a filename',
                                  max_length=64)
 
     def __unicode__(self):

@@ -4,13 +4,28 @@ from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from cms.models import CMSPlugin
 
+from gist.forms import GistPluginAdminForm
+from mysite import settings
+
 from gist.models import GistPluginModel
 
 
-class GistPlugin(CMSPlugin):
+class GistPlugin(CMSPluginBase):
     name = u'Gist'
-    render_teplate = 'gist/templates/_gist_plugin.html'
+    text_enabled = True
     model = GistPluginModel
+    form = GistPluginAdminForm
+    render_template = '_gist_plugin.html'
 
     def render(self, context, instance, placeholder):
+        context['instance'] = instance
         return context
+
+    def icon_src(self, instance):
+        return settings.STATIC_URL + 'gist/images/git.png'
+
+    def icon_alt(self, instance):
+        return u'Gist: %s' % instance
+
+
+plugin_pool.register_plugin(GistPlugin)

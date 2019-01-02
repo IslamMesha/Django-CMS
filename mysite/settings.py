@@ -150,7 +150,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mysite',
-    'gist'
+    'gist.apps.GistConfig'
 )
 
 LANGUAGES = (
