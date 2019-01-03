@@ -1,5 +1,6 @@
 from django.forms.models import ModelForm
 from easy_select2.widgets import Select2
+
 from gist.models import GistPluginModel
 
 

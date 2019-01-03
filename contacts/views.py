@@ -2,10 +2,12 @@
 from __future__ import unicode_literals
 
 import json
-from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
-from django.views.generic import FormView
+
 from cms.models.pagemodel import Page
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
+from django.views.generic import FormView
+
 from contacts.forms import ContactForm, ContactAjaxForm
 
 

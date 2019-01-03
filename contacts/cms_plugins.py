@@ -1,8 +1,8 @@
-from django.core.urlresolvers import reverse
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from contacts.models import ContactPluginModel
+
 from contacts.forms import ContactAjaxForm
+from contacts.models import ContactPluginModel
 
 
 class ContactPlugin(CMSPluginBase):

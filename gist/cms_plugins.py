@@ -2,12 +2,10 @@
 
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from cms.models import CMSPlugin
 
 from gist.forms import GistPluginAdminForm
-from mysite import settings
-
 from gist.models import GistPluginModel
+from mysite import settings
 
 
 class GistPlugin(CMSPluginBase):

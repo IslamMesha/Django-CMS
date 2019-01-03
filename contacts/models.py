@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from mysite import settings
-from django.db import models
-from django.utils import timezone
-from django.core.mail import send_mail
-from django.template.loader import render_to_string
+
 from cms.models import CMSPlugin
+from django.core.mail import send_mail
+from django.db import models
+from django.template.loader import render_to_string
+from django.utils import timezone
+
+from mysite import settings
 
 
 class Contact(models.Model):

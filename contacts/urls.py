@@ -1,4 +1,5 @@
 from django.conf.urls import url
+
 from contacts.views import ContactFormView, ContactFormAjaxView
 
 urlpatterns = [
