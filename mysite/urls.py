@@ -18,7 +18,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    url(r'^admin/', include(admin.site.urls)),  # NOQA
+    url(r'^islam/', include(admin.site.urls)),  # NOQA
     url(r'^', include('cms.urls')),
 )
 
